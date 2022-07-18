@@ -10,10 +10,12 @@ import javafx.scene.layout.VBox;
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
-		try {
+		try {	
 			VBox root = new VBox();
 			root.getChildren().add(new Label("Ryan's label"));
 			root.getChildren().add(new Label("Alan's branch"));
+			
+			//comment to artificially create conflict
 			Scene scene = new Scene(root,400,400);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Alan's project");
